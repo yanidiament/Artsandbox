@@ -34,3 +34,8 @@ jobs:
         with:
           folder: dist
           branch: gh-pages
+          clean: true
+          # Ensure .nojekyll is added to avoid Jekyll processing
+          git-config-name: 'github-actions[bot]'
+          git-config-email: '41898282+github-actions[bot]@users.noreply.github.com'
+          # This will also create a .nojekyll file automatically
